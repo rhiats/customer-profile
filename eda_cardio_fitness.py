@@ -12,7 +12,7 @@ def prelim_data(data_csv):
     return dffitness
 
 def violin_plot(df,output_path):
-    v = sns.violinplot(x="Gender", y="Fitness", data=df,palette="Set2")
+    v = sns.violinplot(x="Gender", y="Fitness", data=df)
     fig = v.get_figure()
     fig.savefig(output_path+"/gender_fitness_distribution.png")
 
